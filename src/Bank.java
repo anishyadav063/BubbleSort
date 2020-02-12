@@ -10,7 +10,9 @@ class Hdfs implements Bank{
 
 	@Override
 	public void deposite(int amount) {
-		// TODO Auto-generated method stub
+		  if(amount>balance) {
+			  throw new invalidAmountException("please enter valid amount");
+		  }
 		
 	}
 
